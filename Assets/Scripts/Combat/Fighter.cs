@@ -9,10 +9,10 @@ namespace RPG.Combat
     public class Fighter : MonoBehaviour, IAction
     {
         [SerializeField] float weaponRange = 2f;
-        [SerializeField] float timeBetweenAttacks = 0.5f;
+        [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] float weaponDamage = 10;
         Health target;
-        float timeSinceLastAttack = 0;
+        float timeSinceLastAttack = Mathf.Infinity;
 
         private void Update()
         {
@@ -61,13 +61,13 @@ namespace RPG.Combat
             return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
         }
 
-        public bool CanAttack(CombatTarget combatTarget)
+        public bool CanAttack(GameObject combatTarget)
         {
             if (combatTarget == null) { return false; }                                     
             Health targetToTest = combatTarget.GetComponent<Health>();
             return targetToTest != null && !targetToTest.IsDead();
         }
-        public void Attack(CombatTarget combatTarget)
+        public void Attack(GameObject combatTarget)
         {
             GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.transform.GetComponent<Health>();
@@ -81,7 +81,7 @@ namespace RPG.Combat
 
         private void StopAttack()
         {
-            GetComponent<Animator>().SetTrigger("attack");
+            GetComponent<Animator>().ResetTrigger("attack");
             GetComponent<Animator>().SetTrigger("stopAttack");
         }
     }
