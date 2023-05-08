@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 7414870000608528054, guid: eb2059ea4814246d1861655067c099d3,
         type: 3}
       propertyPath: healthPoints
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2059ea4814246d1861655067c099d3, type: 3}
@@ -231,6 +231,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+  suspicionTime: 3
+  patrolPath: {fileID: 0}
+  waypointTolerance: 1
+  waypointDwellTime: 2
 --- !u!4 &8586826194066961751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 457759247496083444, guid: eb2059ea4814246d1861655067c099d3,
