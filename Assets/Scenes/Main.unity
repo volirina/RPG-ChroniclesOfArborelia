@@ -1333,6 +1333,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 563041205}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &744977693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744977694}
+  m_Layer: 0
+  m_Name: Pickups
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744977694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744977693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6343906151575543228}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &768486109 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7719574088942746129, guid: 147832a2ee46b4e9e822027e01fcd465,
@@ -2556,7 +2588,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854737059}
-  m_LocalRotation: {x: 0.021926127, y: 0.79564846, z: -0.02885107, w: 0.60467386}
+  m_LocalRotation: {x: 0.021926133, y: 0.79564846, z: -0.028851079, w: 0.60467386}
   m_LocalPosition: {x: -15.62, y: 2.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2799,6 +2831,101 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1942237505}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6343906151575543227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 744977694}
+    m_Modifications:
+    - target: {fileID: 1551934060013136979, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_Name
+      value: Sword Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.364
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.885
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -41.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468716598603137942, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.9138415
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468716598603137942, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468716598603137942, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468716598603137942, guid: d45dcc559d84f461c9a7c060957f1f1e,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d45dcc559d84f461c9a7c060957f1f1e, type: 3}
+--- !u!4 &6343906151575543228 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7374483585913594231, guid: d45dcc559d84f461c9a7c060957f1f1e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6343906151575543227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7035987522276978074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2871,6 +2998,18 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 9188871630418524296, guid: 205d6b84ed6c1443ea4c2e81c502026a,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: aca49ade54908486f96c0d1b25943772,
+        type: 2}
+    - target: {fileID: 9188871630418524296, guid: 205d6b84ed6c1443ea4c2e81c502026a,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 3501cb1b89eec4ff180b59884b849f1b,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205d6b84ed6c1443ea4c2e81c502026a, type: 3}
 --- !u!1001 &7719574089290207436

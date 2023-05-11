@@ -58,6 +58,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 95987043517721978, guid: 9335937f22aa2ad40a7b14777c48f61c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9335937f22aa2ad40a7b14777c48f61c, type: 3}
+--- !u!4 &59391491576894362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4701200980054078, guid: 9335937f22aa2ad40a7b14777c48f61c,
+    type: 3}
+  m_PrefabInstance: {fileID: 55085019578762148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2171218048038636811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66,9 +72,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1599238997, guid: eb2059ea4814246d1861655067c099d3, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: aca49ade54908486f96c0d1b25943772,
+        type: 2}
+    - target: {fileID: 1599238997, guid: eb2059ea4814246d1861655067c099d3, type: 3}
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1599238997, guid: eb2059ea4814246d1861655067c099d3, type: 3}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 4850427051975627012, guid: e806b7eeef5184146acf15666e22dbc6,
+        type: 3}
+    - target: {fileID: 1599238997, guid: eb2059ea4814246d1861655067c099d3, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 3501cb1b89eec4ff180b59884b849f1b,
+        type: 2}
+    - target: {fileID: 1599238997, guid: eb2059ea4814246d1861655067c099d3, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 59391491576894362}
+    - target: {fileID: 1599238997, guid: eb2059ea4814246d1861655067c099d3, type: 3}
+      propertyPath: weaponOverride
+      value: 
+      objectReference: {fileID: 22100000, guid: 77a4633fc02064b6fb74d1ace0672a14,
+        type: 2}
     - target: {fileID: 1599238997, guid: eb2059ea4814246d1861655067c099d3, type: 3}
       propertyPath: timeBetweenAttacks
       value: 1
